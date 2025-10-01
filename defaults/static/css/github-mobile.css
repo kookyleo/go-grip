@@ -1,0 +1,304 @@
+/* Mobile Optimization for go-grip */
+/* Applied on screens with max-width: 768px */
+
+@media screen and (max-width: 768px) {
+  /* ========== CONTAINER & LAYOUT ========== */
+  .container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 8px !important;
+  }
+
+  .container-inner {
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    margin: 0 !important;
+    padding: 16px 12px !important;
+    box-shadow: none !important;
+  }
+
+  /* ========== TYPOGRAPHY ========== */
+  .markdown-body {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Mobile-optimized headings */
+  .markdown-body h1 {
+    font-size: 1.75em !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .markdown-body h2 {
+    font-size: 1.5em !important;
+    margin-top: 24px !important;
+    margin-bottom: 12px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .markdown-body h3 {
+    font-size: 1.25em !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .markdown-body h4,
+  .markdown-body h5,
+  .markdown-body h6 {
+    font-size: 1.1em !important;
+    margin-top: 16px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* ========== PARAGRAPHS & SPACING ========== */
+  .markdown-body p {
+    margin-bottom: 16px !important;
+    text-align: left !important;
+  }
+
+  .markdown-body blockquote {
+    margin: 16px 0 !important;
+    padding: 0 12px !important;
+    border-left: 4px solid #d1d9e0 !important;
+  }
+
+  /* ========== LISTS ========== */
+  .markdown-body ul,
+  .markdown-body ol {
+    padding-left: 24px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .markdown-body li {
+    margin-bottom: 8px !important;
+  }
+
+  /* Nested lists */
+  .markdown-body ul ul,
+  .markdown-body ol ol,
+  .markdown-body ul ol,
+  .markdown-body ol ul {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
+
+  /* ========== CODE BLOCKS ========== */
+  .markdown-body code {
+    font-size: 14px !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    word-break: break-all !important;
+  }
+
+  .markdown-body pre {
+    padding: 12px !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    overflow-x: auto !important;
+    border-radius: 6px !important;
+    margin: 16px 0 !important;
+    /* Enable horizontal scrolling on mobile */
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .markdown-body pre code {
+    font-size: 13px !important;
+    white-space: pre !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  /* ========== TABLES ========== */
+  .markdown-body table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    border-collapse: collapse !important;
+    margin: 16px 0 !important;
+    /* Enable horizontal scrolling for tables */
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .markdown-body th,
+  .markdown-body td {
+    padding: 8px 12px !important;
+    border: 1px solid #d1d9e0 !important;
+    text-align: left !important;
+    vertical-align: top !important;
+    min-width: 120px !important;
+  }
+
+  .markdown-body th {
+    font-weight: 600 !important;
+    background-color: #f6f8fa !important;
+  }
+
+  /* ========== IMAGES ========== */
+  .markdown-body img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 16px auto !important;
+    border-radius: 4px !important;
+  }
+
+  /* Emoji images should stay inline */
+  .markdown-body img.emoji {
+    display: inline !important;
+    margin: 0 !important;
+    max-width: 1.2em !important;
+    vertical-align: text-bottom !important;
+  }
+
+  /* ========== LINKS ========== */
+  .markdown-body a {
+    word-break: break-all !important;
+    color: #0969da !important;
+    text-decoration: none !important;
+  }
+
+  .markdown-body a:hover {
+    text-decoration: underline !important;
+  }
+
+  /* ========== ALERTS/CALLOUTS ========== */
+  .markdown-body .markdown-alert {
+    margin: 16px 0 !important;
+    padding: 12px !important;
+    border-radius: 6px !important;
+    border-left: 4px solid #d1d9e0 !important;
+  }
+
+  .markdown-body .markdown-alert .markdown-alert-title {
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* ========== HORIZONTAL RULES ========== */
+  .markdown-body hr {
+    margin: 24px 0 !important;
+    border: none !important;
+    border-top: 1px solid #d1d9e0 !important;
+  }
+
+  /* ========== TASK LISTS ========== */
+  .markdown-body .task-list-item {
+    list-style: none !important;
+    margin-bottom: 8px !important;
+  }
+
+  .markdown-body .task-list-item-checkbox {
+    margin: 0 8px 0 -20px !important;
+    vertical-align: middle !important;
+    transform: scale(1.2) !important; /* Larger checkboxes for touch */
+  }
+
+  /* ========== FOOTER ========== */
+  .footer {
+    padding: 16px 12px !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    color: #656d76 !important;
+    border-top: 1px solid #d1d9e0 !important;
+    margin-top: 32px !important;
+  }
+
+  /* ========== TOUCH IMPROVEMENTS ========== */
+  /* Larger touch targets for interactive elements */
+  .markdown-body a,
+  .markdown-body button,
+  .markdown-body input[type="checkbox"] {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+
+  /* Improve text selection on mobile */
+  .markdown-body {
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+  }
+
+  /* ========== DARK MODE ADJUSTMENTS ========== */
+  @media (prefers-color-scheme: dark) {
+    .markdown-body blockquote {
+      border-left-color: #3d444d !important;
+    }
+
+    .markdown-body th {
+      background-color: #151b23 !important;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border-color: #3d444d !important;
+    }
+
+    .markdown-body hr {
+      border-top-color: #3d444d !important;
+    }
+
+    .footer {
+      color: #9198a1 !important;
+      border-top-color: #3d444d !important;
+    }
+  }
+
+  /* ========== LANDSCAPE ORIENTATION ========== */
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    .container-inner {
+      padding: 12px 16px !important;
+    }
+
+    .markdown-body h1 {
+      font-size: 1.6em !important;
+    }
+
+    .markdown-body h2 {
+      font-size: 1.4em !important;
+    }
+  }
+
+  /* ========== VERY SMALL SCREENS ========== */
+  @media screen and (max-width: 480px) {
+    .container {
+      padding: 0 4px !important;
+    }
+
+    .container-inner {
+      padding: 12px 8px !important;
+    }
+
+    .markdown-body {
+      font-size: 15px !important;
+    }
+
+    .markdown-body h1 {
+      font-size: 1.6em !important;
+    }
+
+    .markdown-body h2 {
+      font-size: 1.4em !important;
+    }
+
+    .markdown-body pre {
+      padding: 8px !important;
+      font-size: 12px !important;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      padding: 6px 8px !important;
+      min-width: 100px !important;
+    }
+  }
+}

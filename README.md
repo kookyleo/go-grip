@@ -29,6 +29,7 @@ This project is a reimplementation of the original Python-based [grip](https://g
 - Support for mermaid diagrams
 - 🌍 **Enhanced multilingual print support** - optimized for global languages including Chinese, Japanese, Korean, Arabic, Hindi, and more
 - 🖨️ **Professional print layout** - optimized margins, typography, and page breaks for high-quality printing
+- 📱 **Mobile-responsive design** - optimized layout and typography for smartphones and tablets
 
 ```mermaid
 graph TD;
